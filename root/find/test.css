@@ -1,0 +1,386 @@
+body {
+    background: #000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.svg-card {
+    max-width: 450px;
+    width: 100%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 0;
+    position: absolute;
+    height: 200px;
+    margin-top: -25px;
+}
+
+.menu {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.body-json {
+    width: 100%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    max-width: 525px;
+    margin-top: 165px;
+    position: relative;
+    display: grid;
+}
+
+.poster {
+    width: 60px;
+    height: 90px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0;
+    position: absolute;
+    background-color: rgb(255 255 255 / 20%);
+}
+
+.name {
+    margin-left: 75px;
+    display: grid;
+}
+
+.movie-title {
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 23px;
+    z-index: 999;
+}
+
+.name span {
+    color: #fff;
+    font-size: 16px;
+    font-family: system-ui;
+    font-weight: 100;
+}
+
+.movie-background {
+    top: 0;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    -webkit-mask-image: linear-gradient(to top, black, transparent);
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.title-description {
+    color: rgb(255 255 255 / 50%);
+    font-family: system-ui;
+    width: calc(100% - 40px);
+    right: 0;
+    left: 0;
+    margin: auto;
+    padding-top: 13px;
+}
+
+.qualities-find {width: calc(100% - 45px);margin-left: 23px;margin-top: 25px;}
+
+.quality {
+    min-height: 20px;
+    background: #ffffff2e;
+    border-radius: 20px;
+    display: none;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 14px;
+    padding: 15px 0px;
+    position: relative;
+}
+.quality * {
+    font-size: 16px;
+    font-family: system-ui;
+}
+
+.quality span {
+    margin-right: auto;
+    margin-left: 50px;
+    margin-top: -5px;
+    display: flex;
+    font-weight: normal;
+    word-break: break-word;
+}
+.quality a {
+    margin-right: 20px;
+}
+
+.quality span p {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 6px;
+    opacity: 0.5;
+}
+
+.movie-background:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top, black, transparent);
+}
+
+.chose-quality {
+    font-family: system-ui;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 20px;
+    opacity: 0.5;
+    line-height: 20px;
+}
+
+.sections {
+    display: flex;
+    width: calc(100% - 45px);
+    right: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 65px;
+    position: relative;
+    padding-top: 15px;
+    border-top: 1px solid rgb(255 255 255 / 25%);
+}
+
+.sections span {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-family: system-ui;
+    opacity: 0.5;
+    padding-bottom: 15px;
+    position: relative;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.sections span.selected {
+    opacity: 1;
+}
+
+.sections span.selected:after {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #fff;
+    content: '';
+    bottom: 0;
+    opacity: 0.5;
+    margin: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+.title-description {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+    margin-top: -5px;
+    border-bottom: 1px solid rgb(255 255 255 / 20%);
+    padding-bottom: 15px;
+}
+
+.body-json {
+    margin-top: 135px;
+}
+
+.name a {}
+
+.name a {
+    color: #fff;
+    font-family: system-ui;
+    border-radius: 50px;
+    font-size: 12px;
+    width: fit-content;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.name a p {
+    margin-left: 6px;
+    opacity: 0.5;
+}
+
+.quality.a:before {background: #257c58;}
+
+.quality:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    background: #fff;
+    margin-left: 20px;
+    position: absolute;
+    left: 0;
+}
+
+.section-work {
+    display: flex;
+    position: absolute;
+    margin-left: 75px;
+    margin-top: 58px;
+}
+
+.section-work div {
+    color: #fff;
+    font-family: system-ui;
+    font-size: 14px;
+    background: #eee;
+    border-radius: 50px;
+    padding: 3px 10px;
+    margin-right: 8px;
+}
+
+.section-work .a {
+    background: #257c58;
+}
+
+.section-work .b,.quality.b:before {
+    background: #354980;
+}
+
+.section-work .c,.quality.c:before {
+    background: #9b7945;
+}
+
+.section-work .d,.quality.d:before {
+    background: #a0174e;
+}
+
+.search-for-it {
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid rgb(255 255 255 / 20%);
+    margin-bottom: 20px;
+    display: flex;
+    background: rgb(255 255 255 / 10%);
+}
+
+.search-for-it input {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+}
+
+.logo-source {
+    height: 20px;
+    width: 100px;
+    margin-bottom: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo-source.yts {
+    background-image: url(https://yts.mx/assets/images/website/logo-YTS.svg);
+}
+
+.logo-source.xx {
+    background-image: url(https://1337x.to/images/logo.svg);
+}
+
+.logo-source.pp {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/The_Pirate_Bay_logo.svg/904px-The_Pirate_Bay_logo.svg.png);
+}
+
+.quality.d {
+    opacity: 0.5;
+}
+
+.qualities-find[rsa="2160p"] .quality[rsa="2160p"] {
+    display: flex;
+}
+.qualities-find[rsa="720p"] .quality[rsa="720p"] {
+    display: flex;
+}
+.qualities-find[rsa="1080p"] .quality[rsa="1080p"] {
+    display: flex;
+}
+.qualities-find[rsa="480p"] .quality[rsa="480p"] {
+    display: flex;
+}
+.qualities-find[rsa="360p"] .quality[rsa="360p"] {
+    display: flex;
+}
+.qualities-find[rsa="mixed"] .quality {
+    display: flex;
+}
+
+
+.hidden {
+    display: none!important;
+}
+
+
+.movie-background:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+}
+
+.search-for-it a {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    -webkit-mask-image: url(https://p2all.pro/assets/search.svg);
+    -webkit-mask-size: 20px;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    opacity: 0.5;
+    background: #fff;
+}
+
+.search-for-it {
+    position: relative;
+}
+
+
+.search-for-it input {
+    margin-left: 15px;
+    margin-right: 50px;
+}
+
+.quality.disabled {
+    opacity: 0.5;
+}
+.quality .loader {
+    position: absolute;
+    transform: scale(0.35);
+    left: 0;
+    margin-left: -5px;
+    opacity: 0.5;
+}
+
+.quality.loading:before {
+    display: none;
+}
